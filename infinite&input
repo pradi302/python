@@ -1,0 +1,15 @@
+total = 0
+
+while True:
+    try:
+        num = input("Enter number (or press Enter to stop): ")
+        
+        if num == "":
+            break
+        
+        total += int(num)
+    
+    except ValueError:
+        print("Invalid input! Try again.")
+
+print("Total:", total)
